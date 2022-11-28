@@ -15,7 +15,7 @@ async function main() {
 
   //   console.log(Array.isArray(pnpmWorkspace), pnpmWorkspace);
 
-  pnpmWorkspace.push(`${year}`);
+  pnpmWorkspace.push(`${year}/*`);
 
   // deduplicate pnpmworkspace
   const pnpmWorkspaceSet = new Set(pnpmWorkspace);

@@ -1,4 +1,4 @@
 packages:
   - template
   - scripts
-  - "2021/*"
+  - 2021/*

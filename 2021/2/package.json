@@ -1,5 +1,5 @@
 {
-  "name": "aoc-{{year}}-{{day}}",
+  "name": "aoc-2021-2",
   "type": "module",
   "private": true,
   "license": "MIT",
@@ -16,7 +16,8 @@
     "vite": "latest",
     "vitest": "latest",
     "@types/node": "^18.11.9",
-    "utils": "workspace:*"
+    "utils": "workspace:*",
+    "zod": "^3.19.1"
   },
   "stackblitz": {
     "startCommand": "npm run test:ui"

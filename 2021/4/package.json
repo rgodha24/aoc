@@ -1,0 +1,25 @@
+{
+  "name": "aoc-2021-4",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "main": "index.ts",
+  "types": "index.ts",
+  "scripts": {
+    "dev": "vitest",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run"
+  },
+  "devDependencies": {
+    "@vitest/ui": "latest",
+    "vite": "latest",
+    "vitest": "latest",
+    "@types/node": "^18.11.9",
+    "utils": "workspace:*", 
+    "zod": "^3.19.1"
+  },
+  "stackblitz": {
+    "startCommand": "npm run test:ui"
+  }
+}

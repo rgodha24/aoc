@@ -6,6 +6,8 @@ export const splitByDoubleLines = (input: string) => input.split("\n\n");
 
 export const splitByWhiteSpace = (input: string) => input.split(/\s+/);
 
+export const splitByCommas = (input: string) => input.split(",");
+
 export const numberArraySchema = z.array(z.number());
 
 export const sum = (input: number[]) => input.reduce((a, b) => a + b, 0);

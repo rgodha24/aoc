@@ -3,3 +3,4 @@ packages:
   - scripts
   - 2021/*
   - utils
+  - 2020/*

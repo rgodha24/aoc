@@ -1,5 +1,5 @@
 {
-  "name": "aoc-{{year}}-{{day}}",
+  "name": "aoc-2021-5",
   "type": "module",
   "private": true,
   "license": "MIT",

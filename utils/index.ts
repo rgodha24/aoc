@@ -8,6 +8,9 @@ export const sum = (input: number[]) => input.reduce((a, b) => a + b, 0);
 
 export const stringArrayToNumberArray = (input: string[]) => z.array(z.number()).parse(input);
 
+export const fileToNumberArray = (input: string) =>
+  z.array(z.preprocess(Number, z.number())).parse(splitByLines(input));
+
 export const rowsToColumns = (input: string[][]) => {
   const columns: string[][] = [];
   input.forEach((row) => {

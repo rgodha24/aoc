@@ -2,9 +2,23 @@ import { z } from "zod";
 
 export const splitByLines = (input: string) => input.split("\n");
 
+export const splitByDoubleLines = (input: string) => input.split("\n\n");
+
 export const splitByWhiteSpace = (input: string) => input.split(/\s+/);
 
+export const numberArraySchema = z.array(z.number());
+
 export const sum = (input: number[]) => input.reduce((a, b) => a + b, 0);
+
+export const max = (input: number[]) => Math.max(...input);
+
+export const min = (input: number[]) => Math.min(...input);
+
+export const maxes = (input: number[], amount: number) => {
+  const sorted = input.sort((a, b) => b - a);
+
+  return sorted.slice(0, amount);
+};
 
 export const stringArrayToNumberArray = (input: string[]) => z.array(z.number()).parse(input);
 

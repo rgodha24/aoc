@@ -22,6 +22,28 @@ export const maxes = (input: number[], amount: number) => {
   return sorted.slice(0, amount);
 };
 
+export const getAdjacent = (input: number[][], x: number, y: number) => {
+  const xlength = input[0].length;
+  const ylength = input.length;
+
+  const answer = [];
+
+  if (x >= 1) {
+    answer.push(input[y][x - 1]);
+  }
+  if (y >= 1) {
+    answer.push(input[y - 1][x]);
+  }
+  if (x < xlength-1) {
+    answer.push(input[y][x + 1]);
+  }
+  if (y < ylength-1) {
+    answer.push(input[y + 1][x]);
+  }
+
+  return answer.filter((a) => a !== undefined);
+};
+
 export function range(start: number, stop?: number, step?: number) {
   if (typeof stop == "undefined") {
     // one param defined

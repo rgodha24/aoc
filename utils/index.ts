@@ -16,6 +16,20 @@ export const max = (input: number[]) => Math.max(...input);
 
 export const min = (input: number[]) => Math.min(...input);
 
+type ConstructTuple<n, TType, Arr extends TType[] = []> = Arr["length"] extends n
+  ? Arr
+  : ConstructTuple<n, TType, [...Arr, TType]>;
+
+export function group<T extends unknown, L extends number>(input: T[], length: L): ConstructTuple<L, T>[] {
+  const result: unknown[][] = [];
+
+  for (let i = 0; i < input.length; i += length) {
+    result.push(input.slice(i, i + length));
+  }
+
+  return result as ConstructTuple<L, T>[];
+}
+
 export const maxes = (input: number[], amount: number) => {
   const sorted = input.sort((a, b) => b - a);
 
@@ -34,10 +48,10 @@ export const getAdjacent = (input: number[][], x: number, y: number) => {
   if (y >= 1) {
     answer.push(input[y - 1][x]);
   }
-  if (x < xlength-1) {
+  if (x < xlength - 1) {
     answer.push(input[y][x + 1]);
   }
-  if (y < ylength-1) {
+  if (y < ylength - 1) {
     answer.push(input[y + 1][x]);
   }
 

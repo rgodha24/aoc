@@ -10,6 +10,7 @@ describe("test part 2", () => {
   it("has a real input", () => {
     expect(part2.length).not.equals(0);
   });
+
   it("returns the correct value for the example", () => {
     expect(String(part2solver(part2example))).toBe(part2exampleanswer);
   });

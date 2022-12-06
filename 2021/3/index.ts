@@ -1,4 +1,4 @@
-import { mostCommon, rowsToColumns, split, splitByLines } from "utils";
+import { mostCommon, rowsToColumns, split, splitByLines, findAmount } from "utils";
 
 export function part1(input: string) {
   const rows = splitByLines(input).map(split);
@@ -20,52 +20,54 @@ export function part2(input: string) {
   {
     let rows = splitByLines(input).map(split);
 
-    for (let index = 0; index < rows[0].length; index++) {
-      const columns = rowsToColumns(rows);
-      let mostCommonNumber = mostCommon(columns[index]);
+    const length = rows[0].length;
 
-      if (rows.length === 2) {
-        mostCommonNumber = "1";
-      }
+    for (let index = 0; index < length; index++) {
+      const ones = findAmount(
+        rows.map((row) => row[index]),
+        "1"
+      );
+      const zeroes = findAmount(
+        rows.map((row) => row[index]),
+        "0"
+      );
 
+      const most = ones >= zeroes ? "1" : "0";
+
+      rows = rows.filter((row) => row[index] === most);
       if (rows.length === 1) {
-        break;
+        o2 = parseInt(rows[0].join(""), 2);
       }
-      //   console.log(rows);
-      rows = rows.filter((row) => row[index] === mostCommonNumber);
     }
-
-    console.log(rows);
-
-    // console.log(rows[0].join(""));
-
-    o2 = parseInt(rows[0].join(""), 2);
-    console.log(o2);
   }
-
   {
     let rows = splitByLines(input).map(split);
 
-    for (let index = 0; index < rows[0].length; index++) {
-      const columns = rowsToColumns(rows);
-      let leastCommonNumber = mostCommon(columns[index]) === "1" ? "0" : "1";
+    const length = rows[0].length;
 
-      if (rows.length === 2) {
-        leastCommonNumber = "0";
-      }
+    for (let index = 0; index < length; index++) {
+      const ones = findAmount(
+        rows.map((row) => row[index]),
+        "1"
+      );
+      const zeroes = findAmount(
+        rows.map((row) => row[index]),
+        "0"
+      );
 
+      const most = ones < zeroes ? "1" : "0";
+
+      // console.log(ones, zeroes, most);
+
+      rows = rows.filter((row) => row[index] === most);
       if (rows.length === 1) {
-        break;
+        // console.log(rows[0]);
+        co2 = parseInt(rows[0].join(""), 2);
       }
-      //   console.log(index, rows);
-      rows = rows.filter((row) => row[index] === leastCommonNumber);
     }
-
-    console.log(rows);
-    co2 = parseInt(rows[0].join(""), 2);
   }
 
-  console.log(co2, o2);
+  // console.log(o2, co2);
 
   return o2 * co2;
 }

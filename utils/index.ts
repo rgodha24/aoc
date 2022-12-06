@@ -109,6 +109,11 @@ export const mostCommon = (input: string[]) => {
   const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
   return sorted[0][0];
 };
+
+export function findAmount<T, U extends T>(input: T[], value: U) {
+  return input.filter((x) => x === value).length;
+}
+
 export const allEqual = (input: unknown[]) => {
   return input.every((x) => x === input[0]);
 };

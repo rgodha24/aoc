@@ -1,0 +1,27 @@
+{
+  "name": "aoc-2022-7",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "main": "index.ts",
+  "types": "index.ts",
+  "scripts": {
+    "dev": "vitest --ui",
+    "new": "cd ../.. && pnpm new"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@vitest/ui": "latest",
+    "utils": "workspace:*",
+    "vite": "latest",
+    "vitest": "latest",
+    "zod": "^3.19.1"
+  },
+  "stackblitz": {
+    "startCommand": "npm run test:ui"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.191",
+    "lodash": "^4.17.21"
+  }
+}

@@ -86,8 +86,8 @@ export const stringArrayToNumberArray = (input: string[]) => z.array(z.number())
 export const fileToNumberArray = (input: string) =>
   z.array(z.preprocess(Number, z.number())).parse(splitByLines(input));
 
-export const rowsToColumns = (input: string[][]) => {
-  const columns: string[][] = [];
+export const rowsToColumns = <T>(input: T[][]) => {
+  const columns: T[][] = [];
   input.forEach((row) => {
     row.forEach((column, index) => {
       if (!columns[index]) columns[index] = [];

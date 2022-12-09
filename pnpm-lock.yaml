@@ -7,7 +7,7 @@ importers:
       prettier: latest
       turbo: latest
     devDependencies:
-      prettier: 2.8.0
+      prettier: 2.8.1
       turbo: 1.6.3
 
   2019/1:
@@ -20,10 +20,10 @@ importers:
       zod: ^3.19.1
     devDependencies:
       '@types/node': 18.11.9
-      '@vitest/ui': 0.25.5
+      '@vitest/ui': 0.25.6
       utils: link:../../utils
-      vite: 3.2.5_@types+node@18.11.9
-      vitest: 0.25.5_@vitest+ui@0.25.5
+      vite: 4.0.0_@types+node@18.11.9
+      vitest: 0.25.6_@vitest+ui@0.25.6
       zod: 3.19.1
 
   2020/1:
@@ -36,10 +36,10 @@ importers:
       zod: ^3.19.1
     devDependencies:
       '@types/node': 18.11.9
-      '@vitest/ui': 0.25.5
+      '@vitest/ui': 0.25.6
       utils: link:../../utils
-      vite: 3.2.5_@types+node@18.11.9
-      vitest: 0.25.5_@vitest+ui@0.25.5
+      vite: 4.0.0_@types+node@18.11.9
+      vitest: 0.25.6_@vitest+ui@0.25.6
       zod: 3.19.1
 
   2021/1:
@@ -50,9 +50,9 @@ importers:
       vitest: latest
     devDependencies:
       '@types/node': 18.11.9
-      '@vitest/ui': 0.25.5
-      vite: 3.2.5_@types+node@18.11.9
-      vitest: 0.25.5_@vitest+ui@0.25.5
+      '@vitest/ui': 0.25.6
+      vite: 4.0.0_@types+node@18.11.9
+      vitest: 0.25.6_@vitest+ui@0.25.6
 
   2021/2:
     specifiers:
@@ -64,10 +64,10 @@ importers:
       zod: ^3.19.1
     devDependencies:
       '@types/node': 18.11.9
-      '@vitest/ui': 0.25.5
+      '@vitest/ui': 0.25.6
       utils: link:../../utils
-      vite: 3.2.5_@types+node@18.11.9
-      vitest: 0.25.5_@vitest+ui@0.25.5
+      vite: 4.0.0_@types+node@18.11.9
+      vitest: 0.25.6_@vitest+ui@0.25.6
       zod: 3.19.1
 
   2021/3:
@@ -79,10 +79,10 @@ importers:
       vitest: latest
     devDependencies:
       '@types/node': 18.11.9
-      '@vitest/ui': 0.25.5
+      '@vitest/ui': 0.25.6
       utils: link:../../utils
-      vite: 3.2.5_@types+node@18.11.9
-      vitest: 0.25.5_@vitest+ui@0.25.5
+      vite: 4.0.0_@types+node@18.11.9
+      vitest: 0.25.6_@vitest+ui@0.25.6
 
   2021/4:
     specifiers:
@@ -94,10 +94,10 @@ importers:
       zod: ^3.19.1
     devDependencies:
       '@types/node': 18.11.9
-      '@vitest/ui': 0.25.5
+      '@vitest/ui': 0.25.6
       utils: link:../../utils
-      vite: 3.2.5_@types+node@18.11.9
-      vitest: 0.25.5_@vitest+ui@0.25.5
+      vite: 4.0.0_@types+node@18.11.9
+      vitest: 0.25.6_@vitest+ui@0.25.6
       zod: 3.19.1
 
   2021/5:
@@ -110,10 +110,10 @@ importers:
       zod: ^3.19.1
     devDependencies:
       '@types/node': 18.11.9
-      '@vitest/ui': 0.25.5
+      '@vitest/ui': 0.25.6
       utils: link:../../utils
-      vite: 3.2.5_@types+node@18.11.9
-      vitest: 0.25.5_@vitest+ui@0.25.5
+      vite: 4.0.0_@types+node@18.11.9
+      vitest: 0.25.6_@vitest+ui@0.25.6
       zod: 3.19.1
 
   2021/6:
@@ -126,10 +126,10 @@ importers:
       zod: ^3.19.1
     devDependencies:
       '@types/node': 18.11.9
-      '@vitest/ui': 0.25.5
+      '@vitest/ui': 0.25.6
       utils: link:../../utils
-      vite: 3.2.5_@types+node@18.11.9
-      vitest: 0.25.5_@vitest+ui@0.25.5
+      vite: 4.0.0_@types+node@18.11.9
+      vitest: 0.25.6_@vitest+ui@0.25.6
       zod: 3.19.1
 
   2021/7:
@@ -142,10 +142,10 @@ importers:
       zod: ^3.19.1
     devDependencies:
       '@types/node': 18.11.9
-      '@vitest/ui': 0.25.5
+      '@vitest/ui': 0.25.6
       utils: link:../../utils
-      vite: 3.2.5_@types+node@18.11.9
-      vitest: 0.25.5_@vitest+ui@0.25.5
+      vite: 4.0.0_@types+node@18.11.9
+      vitest: 0.25.6_@vitest+ui@0.25.6
       zod: 3.19.1
 
   2021/8:
@@ -158,10 +158,10 @@ importers:
       zod: ^3.19.1
     devDependencies:
       '@types/node': 18.11.9
-      '@vitest/ui': 0.25.5
+      '@vitest/ui': 0.25.6
       utils: link:../../utils
-      vite: 3.2.5_@types+node@18.11.9
-      vitest: 0.25.5_@vitest+ui@0.25.5
+      vite: 4.0.0_@types+node@18.11.9
+      vitest: 0.25.6_@vitest+ui@0.25.6
       zod: 3.19.1
 
   2021/9:
@@ -174,10 +174,10 @@ importers:
       zod: ^3.19.1
     devDependencies:
       '@types/node': 18.11.9
-      '@vitest/ui': 0.25.5
+      '@vitest/ui': 0.25.6
       utils: link:../../utils
-      vite: 3.2.5_@types+node@18.11.9
-      vitest: 0.25.5_@vitest+ui@0.25.5
+      vite: 4.0.0_@types+node@18.11.9
+      vitest: 0.25.6_@vitest+ui@0.25.6
       zod: 3.19.1
 
   2022/1:
@@ -190,10 +190,10 @@ importers:
       zod: ^3.19.1
     devDependencies:
       '@types/node': 18.11.9
-      '@vitest/ui': 0.25.5
+      '@vitest/ui': 0.25.6
       utils: link:../../utils
-      vite: 3.2.5_@types+node@18.11.9
-      vitest: 0.25.5_@vitest+ui@0.25.5
+      vite: 4.0.0_@types+node@18.11.9
+      vitest: 0.25.6_@vitest+ui@0.25.6
       zod: 3.19.1
 
   2022/2:
@@ -206,10 +206,10 @@ importers:
       zod: ^3.19.1
     devDependencies:
       '@types/node': 18.11.9
-      '@vitest/ui': 0.25.5
+      '@vitest/ui': 0.25.6
       utils: link:../../utils
-      vite: 3.2.5_@types+node@18.11.9
-      vitest: 0.25.5_@vitest+ui@0.25.5
+      vite: 4.0.0_@types+node@18.11.9
+      vitest: 0.25.6_@vitest+ui@0.25.6
       zod: 3.19.1
 
   2022/3:
@@ -222,10 +222,10 @@ importers:
       zod: ^3.19.1
     devDependencies:
       '@types/node': 18.11.9
-      '@vitest/ui': 0.25.5
+      '@vitest/ui': 0.25.6
       utils: link:../../utils
-      vite: 3.2.5_@types+node@18.11.9
-      vitest: 0.25.5_@vitest+ui@0.25.5
+      vite: 4.0.0_@types+node@18.11.9
+      vitest: 0.25.6_@vitest+ui@0.25.6
       zod: 3.19.1
 
   2022/4:
@@ -238,10 +238,10 @@ importers:
       zod: ^3.19.1
     devDependencies:
       '@types/node': 18.11.9
-      '@vitest/ui': 0.25.5
+      '@vitest/ui': 0.25.6
       utils: link:../../utils
-      vite: 3.2.5_@types+node@18.11.9
-      vitest: 0.25.5_@vitest+ui@0.25.5
+      vite: 4.0.0_@types+node@18.11.9
+      vitest: 0.25.6_@vitest+ui@0.25.6
       zod: 3.19.1
 
   2022/5:
@@ -254,10 +254,10 @@ importers:
       zod: ^3.19.1
     devDependencies:
       '@types/node': 18.11.9
-      '@vitest/ui': 0.25.5
+      '@vitest/ui': 0.25.6
       utils: link:../../utils
-      vite: 3.2.5_@types+node@18.11.9
-      vitest: 0.25.5_@vitest+ui@0.25.5
+      vite: 4.0.0_@types+node@18.11.9
+      vitest: 0.25.6_@vitest+ui@0.25.6
       zod: 3.19.1
 
   2022/6:
@@ -270,10 +270,10 @@ importers:
       zod: ^3.19.1
     devDependencies:
       '@types/node': 18.11.9
-      '@vitest/ui': 0.25.5
+      '@vitest/ui': 0.25.6
       utils: link:../../utils
-      vite: 3.2.5_@types+node@18.11.9
-      vitest: 0.25.5_@vitest+ui@0.25.5
+      vite: 4.0.0_@types+node@18.11.9
+      vitest: 0.25.6_@vitest+ui@0.25.6
       zod: 3.19.1
 
   2022/7:
@@ -291,10 +291,26 @@ importers:
       lodash: 4.17.21
     devDependencies:
       '@types/node': 18.11.9
-      '@vitest/ui': 0.25.5
+      '@vitest/ui': 0.25.6
       utils: link:../../utils
-      vite: 3.2.5_@types+node@18.11.9
-      vitest: 0.25.5_@vitest+ui@0.25.5
+      vite: 4.0.0_@types+node@18.11.9
+      vitest: 0.25.6_@vitest+ui@0.25.6
+      zod: 3.19.1
+
+  2022/8:
+    specifiers:
+      '@types/node': ^18.11.9
+      '@vitest/ui': latest
+      utils: workspace:*
+      vite: latest
+      vitest: latest
+      zod: ^3.19.1
+    devDependencies:
+      '@types/node': 18.11.9
+      '@vitest/ui': 0.25.6
+      utils: link:../../utils
+      vite: 4.0.0_@types+node@18.11.9
+      vitest: 0.25.6_@vitest+ui@0.25.6
       zod: 3.19.1
 
   scripts:
@@ -323,10 +339,10 @@ importers:
       zod: ^3.19.1
     devDependencies:
       '@types/node': 18.11.9
-      '@vitest/ui': 0.25.5
+      '@vitest/ui': 0.25.6
       utils: link:../utils
-      vite: 3.2.5_@types+node@18.11.9
-      vitest: 0.25.5_@vitest+ui@0.25.5
+      vite: 4.0.0_@types+node@18.11.9
+      vitest: 0.25.6_@vitest+ui@0.25.6
       zod: 3.19.1
 
   utils:
@@ -367,11 +383,209 @@ packages:
     dev: true
     optional: true
 
+  /@esbuild/android-arm/0.16.3:
+    resolution: {integrity: sha512-mueuEoh+s1eRbSJqq9KNBQwI4QhQV6sRXIfTyLXSHGMpyew61rOK4qY21uKbXl1iBoMb0AdL1deWFCQVlN2qHA==}
+    engines: {node: '>=12'}
+    cpu: [arm]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/android-arm64/0.16.3:
+    resolution: {integrity: sha512-RolFVeinkeraDvN/OoRf1F/lP0KUfGNb5jxy/vkIMeRRChkrX/HTYN6TYZosRJs3a1+8wqpxAo5PI5hFmxyPRg==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/android-x64/0.16.3:
+    resolution: {integrity: sha512-SFpTUcIT1bIJuCCBMCQWq1bL2gPTjWoLZdjmIhjdcQHaUfV41OQfho6Ici5uvvkMmZRXIUGpM3GxysP/EU7ifQ==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/darwin-arm64/0.16.3:
+    resolution: {integrity: sha512-DO8WykMyB+N9mIDfI/Hug70Dk1KipavlGAecxS3jDUwAbTpDXj0Lcwzw9svkhxfpCagDmpaTMgxWK8/C/XcXvw==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/darwin-x64/0.16.3:
+    resolution: {integrity: sha512-uEqZQ2omc6BvWqdCiyZ5+XmxuHEi1SPzpVxXCSSV2+Sh7sbXbpeNhHIeFrIpRjAs0lI1FmA1iIOxFozKBhKgRQ==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/freebsd-arm64/0.16.3:
+    resolution: {integrity: sha512-nJansp3sSXakNkOD5i5mIz2Is/HjzIhFs49b1tjrPrpCmwgBmH9SSzhC/Z1UqlkivqMYkhfPwMw1dGFUuwmXhw==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/freebsd-x64/0.16.3:
+    resolution: {integrity: sha512-TfoDzLw+QHfc4a8aKtGSQ96Wa+6eimljjkq9HKR0rHlU83vw8aldMOUSJTUDxbcUdcgnJzPaX8/vGWm7vyV7ug==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-arm/0.16.3:
+    resolution: {integrity: sha512-VwswmSYwVAAq6LysV59Fyqk3UIjbhuc6wb3vEcJ7HEJUtFuLK9uXWuFoH1lulEbE4+5GjtHi3MHX+w1gNHdOWQ==}
+    engines: {node: '>=12'}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-arm64/0.16.3:
+    resolution: {integrity: sha512-7I3RlsnxEFCHVZNBLb2w7unamgZ5sVwO0/ikE2GaYvYuUQs9Qte/w7TqWcXHtCwxvZx/2+F97ndiUQAWs47ZfQ==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-ia32/0.16.3:
+    resolution: {integrity: sha512-X8FDDxM9cqda2rJE+iblQhIMYY49LfvW4kaEjoFbTTQ4Go8G96Smj2w3BRTwA8IHGoi9dPOPGAX63dhuv19UqA==}
+    engines: {node: '>=12'}
+    cpu: [ia32]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@esbuild/linux-loong64/0.15.16:
     resolution: {integrity: sha512-SDLfP1uoB0HZ14CdVYgagllgrG7Mdxhkt4jDJOKl/MldKrkQ6vDJMZKl2+5XsEY/Lzz37fjgLQoJBGuAw/x8kQ==}
     engines: {node: '>=12'}
     cpu: [loong64]
     os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-loong64/0.16.3:
+    resolution: {integrity: sha512-hIbeejCOyO0X9ujfIIOKjBjNAs9XD/YdJ9JXAy1lHA+8UXuOqbFe4ErMCqMr8dhlMGBuvcQYGF7+kO7waj2KHw==}
+    engines: {node: '>=12'}
+    cpu: [loong64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-mips64el/0.16.3:
+    resolution: {integrity: sha512-znFRzICT/V8VZQMt6rjb21MtAVJv/3dmKRMlohlShrbVXdBuOdDrGb+C2cZGQAR8RFyRe7HS6klmHq103WpmVw==}
+    engines: {node: '>=12'}
+    cpu: [mips64el]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-ppc64/0.16.3:
+    resolution: {integrity: sha512-EV7LuEybxhXrVTDpbqWF2yehYRNz5e5p+u3oQUS2+ZFpknyi1NXxr8URk4ykR8Efm7iu04//4sBg249yNOwy5Q==}
+    engines: {node: '>=12'}
+    cpu: [ppc64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-riscv64/0.16.3:
+    resolution: {integrity: sha512-uDxqFOcLzFIJ+r/pkTTSE9lsCEaV/Y6rMlQjUI9BkzASEChYL/aSQjZjchtEmdnVxDKETnUAmsaZ4pqK1eE5BQ==}
+    engines: {node: '>=12'}
+    cpu: [riscv64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-s390x/0.16.3:
+    resolution: {integrity: sha512-NbeREhzSxYwFhnCAQOQZmajsPYtX71Ufej3IQ8W2Gxskfz9DK58ENEju4SbpIj48VenktRASC52N5Fhyf/aliQ==}
+    engines: {node: '>=12'}
+    cpu: [s390x]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-x64/0.16.3:
+    resolution: {integrity: sha512-SDiG0nCixYO9JgpehoKgScwic7vXXndfasjnD5DLbp1xltANzqZ425l7LSdHynt19UWOcDjG9wJJzSElsPvk0w==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/netbsd-x64/0.16.3:
+    resolution: {integrity: sha512-AzbsJqiHEq1I/tUvOfAzCY15h4/7Ivp3ff/o1GpP16n48JMNAtbW0qui2WCgoIZArEHD0SUQ95gvR0oSO7ZbdA==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [netbsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/openbsd-x64/0.16.3:
+    resolution: {integrity: sha512-gSABi8qHl8k3Cbi/4toAzHiykuBuWLZs43JomTcXkjMZVkp0gj3gg9mO+9HJW/8GB5H89RX/V0QP4JGL7YEEVg==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [openbsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/sunos-x64/0.16.3:
+    resolution: {integrity: sha512-SF9Kch5Ete4reovvRO6yNjMxrvlfT0F0Flm+NPoUw5Z4Q3r1d23LFTgaLwm3Cp0iGbrU/MoUI+ZqwCv5XJijCw==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [sunos]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/win32-arm64/0.16.3:
+    resolution: {integrity: sha512-u5aBonZIyGopAZyOnoPAA6fGsDeHByZ9CnEzyML9NqntK6D/xl5jteZUKm/p6nD09+v3pTM6TuUIqSPcChk5gg==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/win32-ia32/0.16.3:
+    resolution: {integrity: sha512-GlgVq1WpvOEhNioh74TKelwla9KDuAaLZrdxuuUgsP2vayxeLgVc+rbpIv0IYF4+tlIzq2vRhofV+KGLD+37EQ==}
+    engines: {node: '>=12'}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/win32-x64/0.16.3:
+    resolution: {integrity: sha512-5/JuTd8OWW8UzEtyf19fbrtMJENza+C9JoPIkvItgTBQ1FO2ZLvjbPO6Xs54vk0s5JB5QsfieUEshRQfu7ZHow==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [win32]
     requiresBuild: true
     dev: true
     optional: true
@@ -423,8 +637,8 @@ packages:
     resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==}
     dev: true
 
-  /@vitest/ui/0.25.5:
-    resolution: {integrity: sha512-+t1UGlBlC5ZluTAxkuCss/XU2ZN3uojXJfAvIbvUEACz5ElmvAoZwJ9xHobNC8v4E3G0KE9xJ+dnntwJ4ZDyyg==}
+  /@vitest/ui/0.25.6:
+    resolution: {integrity: sha512-Ws3cDPJ7Ya/jPUmoqYF2mZalvyCccV3P+qerqBfu6NsFqtZffyb7hkwkuLnXeB6NAJtR2I0+y85NrvaJMLjbEA==}
     dependencies:
       sirv: 2.0.2
     dev: true
@@ -716,6 +930,36 @@ packages:
       esbuild-windows-arm64: 0.15.16
     dev: true
 
+  /esbuild/0.16.3:
+    resolution: {integrity: sha512-71f7EjPWTiSguen8X/kxEpkAS7BFHwtQKisCDDV3Y4GLGWBaoSCyD5uXkaUew6JDzA9FEN1W23mdnSwW9kqCeg==}
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    optionalDependencies:
+      '@esbuild/android-arm': 0.16.3
+      '@esbuild/android-arm64': 0.16.3
+      '@esbuild/android-x64': 0.16.3
+      '@esbuild/darwin-arm64': 0.16.3
+      '@esbuild/darwin-x64': 0.16.3
+      '@esbuild/freebsd-arm64': 0.16.3
+      '@esbuild/freebsd-x64': 0.16.3
+      '@esbuild/linux-arm': 0.16.3
+      '@esbuild/linux-arm64': 0.16.3
+      '@esbuild/linux-ia32': 0.16.3
+      '@esbuild/linux-loong64': 0.16.3
+      '@esbuild/linux-mips64el': 0.16.3
+      '@esbuild/linux-ppc64': 0.16.3
+      '@esbuild/linux-riscv64': 0.16.3
+      '@esbuild/linux-s390x': 0.16.3
+      '@esbuild/linux-x64': 0.16.3
+      '@esbuild/netbsd-x64': 0.16.3
+      '@esbuild/openbsd-x64': 0.16.3
+      '@esbuild/sunos-x64': 0.16.3
+      '@esbuild/win32-arm64': 0.16.3
+      '@esbuild/win32-ia32': 0.16.3
+      '@esbuild/win32-x64': 0.16.3
+    dev: true
+
   /fast-glob/3.2.12:
     resolution: {integrity: sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w==}
     engines: {node: '>=8.6.0'}
@@ -929,8 +1173,8 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
-  /prettier/2.8.0:
-    resolution: {integrity: sha512-9Lmg8hTFZKG0Asr/kW9Bp8tJjRVluO8EJQVfY2T7FMw9T5jy4I/Uvx0Rca/XWf50QQ1/SS48+6IJWnrb+2yemA==}
+  /prettier/2.8.1:
+    resolution: {integrity: sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
@@ -963,6 +1207,14 @@ packages:
   /rollup/2.79.1:
     resolution: {integrity: sha512-uKxbd0IhMZOhjAiD5oAFp7BqvkA4Dv47qpOCtaNvng4HBwdbWtdOh8f5nZNuk2rp51PMGk3bzfWu5oayNEuYnw==}
     engines: {node: '>=10.0.0'}
+    hasBin: true
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
+  /rollup/3.7.0:
+    resolution: {integrity: sha512-FIJe0msW9P7L9BTfvaJyvn1U1BVCNTL3w8O+PKIrCyiMLg+rIUGb4MbcgVZ10Lnm1uWXOTOWRNARjfXC1+M12Q==}
+    engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
@@ -1148,8 +1400,42 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.25.5_@vitest+ui@0.25.5:
-    resolution: {integrity: sha512-lFKSTZV+AjuL44/yNC0aDPKTiasYSqOQ97Gg2G4P2LnjyzQ21ZUs4rQOscHK3lrSnVuir3+1QavHzbDgH4tWQA==}
+  /vite/4.0.0_@types+node@18.11.9:
+    resolution: {integrity: sha512-ynad+4kYs8Jcnn8J7SacS9vAbk7eMy0xWg6E7bAhS1s79TK+D7tVFGXVZ55S7RNLRROU1rxoKlvZ/qjaB41DGA==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': '>= 14'
+      less: '*'
+      sass: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      less:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+    dependencies:
+      '@types/node': 18.11.9
+      esbuild: 0.16.3
+      postcss: 8.4.19
+      resolve: 1.22.1
+      rollup: 3.7.0
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
+  /vitest/0.25.6_@vitest+ui@0.25.6:
+    resolution: {integrity: sha512-jdPgmZ7BcDnm1+hmMPIl9BZjSy+b8Y8V0tQMsv7ECO90Qic7EZ5/+traILXLpsXgqK5KgVrUJmchevAUuKL/1w==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
@@ -1173,7 +1459,7 @@ packages:
       '@types/chai': 4.3.4
       '@types/chai-subset': 1.3.3
       '@types/node': 18.11.9
-      '@vitest/ui': 0.25.5
+      '@vitest/ui': 0.25.6
       acorn: 8.8.1
       acorn-walk: 8.2.0
       chai: 4.3.7

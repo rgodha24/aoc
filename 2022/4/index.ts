@@ -37,7 +37,7 @@ export function part2(input: string) {
 
     if (valid) {
       answer++;
-      console.log(index)
+      // console.log(index)
     }
   });
 

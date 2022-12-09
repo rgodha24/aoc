@@ -1,5 +1,4 @@
 packages:
-  - template
   - scripts
   - 2021/*
   - utils

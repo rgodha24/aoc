@@ -10,7 +10,7 @@ export function part1(input: string) {
     array[fish] += 1;
   });
 
-  console.log(array);
+  // console.log(array);
 
   for (let index = 0; index < 80; index++) {
     const zeroes = array.shift();
@@ -31,7 +31,7 @@ export function part2(input: string) {
     array[fish] += 1;
   });
 
-  console.log(array);
+  // console.log(array);
 
   for (let index = 0; index < 256; index++) {
     const zeroes = array.shift();

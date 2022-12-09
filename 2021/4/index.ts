@@ -31,8 +31,8 @@ export function part1(input: string) {
       if (checkColumns(board) || checkRows(board)) {
         if (answer === 0) {
           answer = number * sum(board.map((x) => (x === "done" ? 0 : x)));
-          console.table({ answer, number, sum: sum(board.map((x) => (x === "done" ? 0 : x))) });
-          console.log(board);
+          // console.table({ answer, number, sum: sum(board.map((x) => (x === "done" ? 0 : x))) });
+          // console.log(board);
         }
       }
     });
@@ -68,14 +68,14 @@ export function part2(input: string) {
         )
     ) as (number | "done")[][];
 
-  console.log(boards[0].length);
+  // console.log(boards[0].length);
 
   numbers.forEach((number) => {
     if (boards.length === 1) {
       // console.log(sum(boards[0].map((x) => (x === "done" ? 0 : x))) - number, number);
       if (answer === 0) {
         answer = (sum(boards[0].map((x) => (x === "done" ? 0 : x))) - number) * number;
-        console.log(boards, number, sum(boards[0].map((x) => (x === "done" ? 0 : x))) - number, boards[0].length);
+        // console.log(boards, number, sum(boards[0].map((x) => (x === "done" ? 0 : x))) - number, boards[0].length);
       }
     } else {
       boards = boards.map((board) => {
@@ -84,7 +84,7 @@ export function part2(input: string) {
           board[board.indexOf(number)] = "done";
         }
         if (initialLength !== 25) {
-          console.log(board.length, initialLength, board);
+          // console.log(board.length, initialLength, board);
         }
         return board;
       });

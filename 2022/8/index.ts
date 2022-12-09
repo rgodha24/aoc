@@ -92,7 +92,7 @@ export function part2(input: string) {
     }
   });
 
-  console.log(answer);
+  // console.log(answer);
 
   return utils.max(answer);
 }

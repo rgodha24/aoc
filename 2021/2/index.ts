@@ -3,14 +3,14 @@ import { z } from "zod";
 
 export function part1(input: string) {
   const lines = splitByLines(input);
-  console.log(lines);
+  // console.log(lines);
   const directions = lines.map(splitByWhiteSpace);
-  console.log(directions);
+  // console.log(directions);
 
   const schema = z.array(z.tuple([z.enum(["forward", "down", "up"]), z.preprocess((val) => Number(val), z.number())]));
 
   const data = schema.parse(directions);
-  console.log(data);
+  // console.log(data);
   let x: number = 0;
   let y: number = 0;
 
@@ -33,14 +33,14 @@ export function part1(input: string) {
 
 export function part2(input: string) {
   const lines = splitByLines(input);
-  console.log(lines);
+  // console.log(lines);
   const directions = lines.map(splitByWhiteSpace);
-  console.log(directions);
+  // console.log(directions);
 
   const schema = z.array(z.tuple([z.enum(["forward", "down", "up"]), z.preprocess((val) => Number(val), z.number())]));
 
   const data = schema.parse(directions);
-  console.log(data);
+  // console.log(data);
   let x: number = 0;
   let y: number = 0;
   let aim = 0;

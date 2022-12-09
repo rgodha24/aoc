@@ -11,7 +11,8 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "new": "cd scripts && pnpm new && pnpm i"
+    "new": "cd scripts && pnpm new && pnpm i", 
+    "test": "turbo run test --concurrency 5"
   },
   "devDependencies": {
     "prettier": "latest",

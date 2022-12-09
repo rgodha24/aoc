@@ -6,7 +6,9 @@
   "main": "index.ts",
   "types": "index.ts",
   "scripts": {
-    "dev": "vitest --ui"
+    "dev": "vitest --ui",
+    "new": "cd ../.. && pnpm new",
+    "test": "vitest run"
   },
   "devDependencies": {
     "@vitest/ui": "latest",

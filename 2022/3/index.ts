@@ -4,7 +4,10 @@ export function part1(input: string) {
   const data = utils.splitByLines(input).map((line) => {
     const split = line.split("");
 
-    return [new Set(split.slice(0, split.length / 2)), new Set(split.slice(split.length / 2, split.length))] as const;
+    return [
+      new Set(split.slice(0, split.length / 2)),
+      new Set(split.slice(split.length / 2, split.length)),
+    ] as const;
   });
 
   let answer: string[] = [];
@@ -37,7 +40,10 @@ const getPriority = (char: string) => {
 export function part2(input: string) {
   const data = utils
     .group(utils.splitByLines(input), 3)
-    .map(([line1, line2, line3]) => [new Set(line1), new Set(line2), new Set(line3)] as const);
+    .map(
+      ([line1, line2, line3]) =>
+        [new Set(line1), new Set(line2), new Set(line3)] as const
+    );
 
   let answer: string[] = [];
 

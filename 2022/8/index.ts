@@ -21,10 +21,22 @@ export function part1(input: string) {
           const column = dataAsColumns[columnIndex];
 
           // most stupid code i've ever written lmao
-          const treesAbove = column.slice(0, rowIndex).length !== 0 ? column.slice(0, rowIndex) : [999];
-          const treesBelow = column.slice(rowIndex + 1).length !== 0 ? column.slice(rowIndex + 1) : [999];
-          const treesLeft = row.slice(0, columnIndex).length !== 0 ? row.slice(0, columnIndex) : [999];
-          const treesRight = row.slice(columnIndex + 1).length !== 0 ? row.slice(columnIndex + 1) : [999];
+          const treesAbove =
+            column.slice(0, rowIndex).length !== 0
+              ? column.slice(0, rowIndex)
+              : [999];
+          const treesBelow =
+            column.slice(rowIndex + 1).length !== 0
+              ? column.slice(rowIndex + 1)
+              : [999];
+          const treesLeft =
+            row.slice(0, columnIndex).length !== 0
+              ? row.slice(0, columnIndex)
+              : [999];
+          const treesRight =
+            row.slice(columnIndex + 1).length !== 0
+              ? row.slice(columnIndex + 1)
+              : [999];
 
           // console.log(treesAbove, treesBelow, treesLeft, treesRight);
 
@@ -71,10 +83,22 @@ export function part2(input: string) {
           const column = dataAsColumns[columnIndex];
 
           // most stupid code i've ever written lmao
-          const treesAbove = column.slice(0, rowIndex).length !== 0 ? column.slice(0, rowIndex) : [999];
-          const treesBelow = column.slice(rowIndex + 1).length !== 0 ? column.slice(rowIndex + 1) : [999];
-          const treesLeft = row.slice(0, columnIndex).length !== 0 ? row.slice(0, columnIndex) : [999];
-          const treesRight = row.slice(columnIndex + 1).length !== 0 ? row.slice(columnIndex + 1) : [999];
+          const treesAbove =
+            column.slice(0, rowIndex).length !== 0
+              ? column.slice(0, rowIndex)
+              : [999];
+          const treesBelow =
+            column.slice(rowIndex + 1).length !== 0
+              ? column.slice(rowIndex + 1)
+              : [999];
+          const treesLeft =
+            row.slice(0, columnIndex).length !== 0
+              ? row.slice(0, columnIndex)
+              : [999];
+          const treesRight =
+            row.slice(columnIndex + 1).length !== 0
+              ? row.slice(columnIndex + 1)
+              : [999];
 
           let score: [number, number, number, number] = [
             evaluateTrees(treesAbove.reverse(), value),
@@ -82,7 +106,6 @@ export function part2(input: string) {
             evaluateTrees(treesLeft.reverse(), value),
             evaluateTrees(treesRight, value),
           ];
-
 
           const scenicScore = score.reduce((a, b) => a * b, 1);
 
@@ -110,7 +133,9 @@ const evaluateTrees = (trees: number[], value: number) => {
 };
 
 const getData = (input: string) => {
-  const data = utils.splitByLines(input).map((line) => utils.split(line).map(Number));
+  const data = utils
+    .splitByLines(input)
+    .map((line) => utils.split(line).map(Number));
 
   return {
     data,

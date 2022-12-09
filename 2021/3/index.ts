@@ -1,11 +1,19 @@
-import { mostCommon, rowsToColumns, split, splitByLines, findAmount } from "utils";
+import {
+  mostCommon,
+  rowsToColumns,
+  split,
+  splitByLines,
+  findAmount,
+} from "utils";
 
 export function part1(input: string) {
   const rows = splitByLines(input).map(split);
   const columns = rowsToColumns(rows);
 
   const columnsMost = columns.map(mostCommon);
-  const columnsLeast = columnsMost.map((val) => val.replaceAll("1", "2").replaceAll("0", "1").replaceAll("2", "0"));
+  const columnsLeast = columnsMost.map((val) =>
+    val.replaceAll("1", "2").replaceAll("0", "1").replaceAll("2", "0")
+  );
 
   const gamma = parseInt(columnsMost.join(""), 2);
   const epsilon = parseInt(columnsLeast.join(""), 2);

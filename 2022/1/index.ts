@@ -1,7 +1,9 @@
 import * as utils from "utils";
 
 export function part1(input: string) {
-  const cals = input.split("\n\n").map((block) => block.split("\n").map(Number));
+  const cals = input
+    .split("\n\n")
+    .map((block) => block.split("\n").map(Number));
 
   const sums = cals.map(utils.sum);
 
@@ -9,7 +11,9 @@ export function part1(input: string) {
 }
 
 export function part2(input: string) {
-  const cals = input.split("\n\n").map((block) => block.split("\n").map(Number));
+  const cals = input
+    .split("\n\n")
+    .map((block) => block.split("\n").map(Number));
 
   const sums = cals.map(utils.sum).sort((a, b) => -a + b);
 

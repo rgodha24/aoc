@@ -16,10 +16,18 @@ export function part1(input: string) {
   let answer = 0;
 
   data.forEach(([them, me]) => {
-    if ((them === "A" && me === "Y") || (them === "B" && me === "Z") || (them === "C" && me === "X")) {
+    if (
+      (them === "A" && me === "Y") ||
+      (them === "B" && me === "Z") ||
+      (them === "C" && me === "X")
+    ) {
       answer += 6; // win
     }
-    if ((them === "A" && me === "X") || (them === "B" && me === "Y") || (them === "C" && me === "Z")) {
+    if (
+      (them === "A" && me === "X") ||
+      (them === "B" && me === "Y") ||
+      (them === "C" && me === "Z")
+    ) {
       answer += 3; // draw
     } else {
       answer += 0; // lose

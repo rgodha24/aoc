@@ -2,11 +2,18 @@ import { z } from "zod";
 import * as utils from "utils";
 
 export function part1(input: string) {
-  const schema = z.array(z.tuple([z.tuple([z.number(), z.number()]), z.tuple([z.number(), z.number()])]));
+  const schema = z.array(
+    z.tuple([
+      z.tuple([z.number(), z.number()]),
+      z.tuple([z.number(), z.number()]),
+    ])
+  );
 
   const a = utils
     .splitByLines(input)
-    .map((line) => line.split("->").map((column) => column.trim().split(",").map(Number)));
+    .map((line) =>
+      line.split("->").map((column) => column.trim().split(",").map(Number))
+    );
 
   // console.log(a);
 
@@ -38,7 +45,9 @@ export function part1(input: string) {
 
   const biggest = utils.max(data.map((a) => utils.max(a.map(utils.max))));
 
-  const grid = new Array<number>(biggest + 1).fill(0).map(() => new Array<number>(biggest + 1).fill(0));
+  const grid = new Array<number>(biggest + 1)
+    .fill(0)
+    .map(() => new Array<number>(biggest + 1).fill(0));
 
   points.flat().forEach(([x, y]) => {
     grid[x][y] += 1;
@@ -56,11 +65,18 @@ export function part1(input: string) {
 }
 
 export function part2(input: string) {
-  const schema = z.array(z.tuple([z.tuple([z.number(), z.number()]), z.tuple([z.number(), z.number()])]));
+  const schema = z.array(
+    z.tuple([
+      z.tuple([z.number(), z.number()]),
+      z.tuple([z.number(), z.number()]),
+    ])
+  );
 
   const a = utils
     .splitByLines(input)
-    .map((line) => line.split("->").map((column) => column.trim().split(",").map(Number)));
+    .map((line) =>
+      line.split("->").map((column) => column.trim().split(",").map(Number))
+    );
 
   // console.log(a);
 
@@ -87,7 +103,7 @@ export function part2(input: string) {
       }
     } else {
       for (let index = 0; index !== Math.abs(xsign + xdiff); index += 1) {
-        points.push([x1 + xsign*index, y1 + ysign*index]);
+        points.push([x1 + xsign * index, y1 + ysign * index]);
       }
     }
 
@@ -96,7 +112,9 @@ export function part2(input: string) {
 
   const biggest = utils.max(data.map((a) => utils.max(a.map(utils.max))));
 
-  const grid = new Array<number>(biggest + 1).fill(0).map(() => new Array<number>(biggest + 1).fill(0));
+  const grid = new Array<number>(biggest + 1)
+    .fill(0)
+    .map(() => new Array<number>(biggest + 1).fill(0));
 
   points.flat().forEach(([x, y]) => {
     grid[x][y] += 1;

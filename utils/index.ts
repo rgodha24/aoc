@@ -16,11 +16,16 @@ export const max = (input: number[]) => Math.max(...input);
 
 export const min = (input: number[]) => Math.min(...input);
 
-type ConstructTuple<n, TType, Arr extends TType[] = []> = Arr["length"] extends n
-  ? Arr
-  : ConstructTuple<n, TType, [...Arr, TType]>;
+type ConstructTuple<
+  n,
+  TType,
+  Arr extends TType[] = []
+> = Arr["length"] extends n ? Arr : ConstructTuple<n, TType, [...Arr, TType]>;
 
-export function group<T extends unknown, L extends number>(input: T[], length: L): ConstructTuple<L, T>[] {
+export function group<T extends unknown, L extends number>(
+  input: T[],
+  length: L
+): ConstructTuple<L, T>[] {
   const result: unknown[][] = [];
 
   for (let i = 0; i < input.length; i += length) {
@@ -81,7 +86,8 @@ export function range(start: number, stop?: number, step?: number) {
   return result;
 }
 
-export const stringArrayToNumberArray = (input: string[]) => z.array(z.number()).parse(input);
+export const stringArrayToNumberArray = (input: string[]) =>
+  z.array(z.number()).parse(input);
 
 export const fileToNumberArray = (input: string) =>
   z.array(z.preprocess(Number, z.number())).parse(splitByLines(input));
@@ -139,7 +145,15 @@ export const checkRows = (input: unknown[]) => {
 
 export const checkColumns = (input: unknown[]) => {
   for (let i = 0; i < 5; i++) {
-    if (allEqual([input[i], input[i + 5], input[i + 10], input[i + 15], input[i + 20]])) {
+    if (
+      allEqual([
+        input[i],
+        input[i + 5],
+        input[i + 10],
+        input[i + 15],
+        input[i + 20],
+      ])
+    ) {
       return true;
     }
   }

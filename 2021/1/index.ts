@@ -19,7 +19,11 @@ export function part2(input: string) {
   return (
     data
       .map((x, index, array) => {
-        const now = [parseInt(x), parseInt(array[index + 1]), parseInt(array[index + 2])].reduce((a, b) => a + b, 0);
+        const now = [
+          parseInt(x),
+          parseInt(array[index + 1]),
+          parseInt(array[index + 2]),
+        ].reduce((a, b) => a + b, 0);
         // sum array
 
         const prev = [
@@ -33,6 +37,6 @@ export function part2(input: string) {
         return now < prev;
       })
       // return only trues
-      .filter((x) => x).length 
+      .filter((x) => x).length
   );
 }

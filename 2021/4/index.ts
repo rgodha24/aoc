@@ -2,7 +2,10 @@ import { z } from "zod";
 import { checkColumns, checkRows, sum } from "utils";
 
 export function part1(input: string) {
-  const numbers = z.number().array().parse(input.split("\n\n")[0].split(",").map(Number));
+  const numbers = z
+    .number()
+    .array()
+    .parse(input.split("\n\n")[0].split(",").map(Number));
 
   let answer = 0;
 
@@ -42,7 +45,10 @@ export function part1(input: string) {
 }
 
 export function part2(input: string) {
-  const numbers = z.number().array().parse(input.split("\n\n")[0].split(",").map(Number));
+  const numbers = z
+    .number()
+    .array()
+    .parse(input.split("\n\n")[0].split(",").map(Number));
 
   let answer = 0;
 
@@ -74,7 +80,8 @@ export function part2(input: string) {
     if (boards.length === 1) {
       // console.log(sum(boards[0].map((x) => (x === "done" ? 0 : x))) - number, number);
       if (answer === 0) {
-        answer = (sum(boards[0].map((x) => (x === "done" ? 0 : x))) - number) * number;
+        answer =
+          (sum(boards[0].map((x) => (x === "done" ? 0 : x))) - number) * number;
         // console.log(boards, number, sum(boards[0].map((x) => (x === "done" ? 0 : x))) - number, boards[0].length);
       }
     } else {

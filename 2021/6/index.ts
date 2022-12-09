@@ -2,7 +2,9 @@ import * as utils from "utils";
 import { z } from "zod";
 
 export function part1(input: string) {
-  const data = z.array(z.number().min(0).max(7)).parse(input.split(",").map(Number));
+  const data = z
+    .array(z.number().min(0).max(7))
+    .parse(input.split(",").map(Number));
 
   const array = new Array(9).fill(0).map((a) => 0);
 
@@ -23,7 +25,9 @@ export function part1(input: string) {
 }
 
 export function part2(input: string) {
-  const data = z.array(z.number().min(0).max(7)).parse(input.split(",").map(Number));
+  const data = z
+    .array(z.number().min(0).max(7))
+    .parse(input.split(",").map(Number));
 
   const array = new Array(9).fill(0).map((a) => 0);
 

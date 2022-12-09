@@ -7,7 +7,12 @@ export function part1(input: string) {
   const directions = lines.map(splitByWhiteSpace);
   // console.log(directions);
 
-  const schema = z.array(z.tuple([z.enum(["forward", "down", "up"]), z.preprocess((val) => Number(val), z.number())]));
+  const schema = z.array(
+    z.tuple([
+      z.enum(["forward", "down", "up"]),
+      z.preprocess((val) => Number(val), z.number()),
+    ])
+  );
 
   const data = schema.parse(directions);
   // console.log(data);
@@ -37,7 +42,12 @@ export function part2(input: string) {
   const directions = lines.map(splitByWhiteSpace);
   // console.log(directions);
 
-  const schema = z.array(z.tuple([z.enum(["forward", "down", "up"]), z.preprocess((val) => Number(val), z.number())]));
+  const schema = z.array(
+    z.tuple([
+      z.enum(["forward", "down", "up"]),
+      z.preprocess((val) => Number(val), z.number()),
+    ])
+  );
 
   const data = schema.parse(directions);
   // console.log(data);

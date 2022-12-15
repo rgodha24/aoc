@@ -47,6 +47,9 @@ async function main() {
   mkdirSync(path.join(__dirname, `../${year}/${day}/test`), {
     recursive: true,
   });
+  mkdirSync(path.join(__dirname, `../${year}/${day}/solver`), {
+    recursive: true,
+  });
 
   files.forEach((file) => {
     copyFileSync(path.join(__dirname, file[0]), path.join(__dirname, file[1]));

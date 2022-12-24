@@ -5,10 +5,22 @@
   "main": "index.ts",
   "types": "index.ts",
   "devDependencies": {
+    "@vitest/ui": "^0.26.2",
+    "vite": "^4.0.3",
+    "vitest": "^0.26.2",
     "zod": "^3.19.1"
   },
-  "scripts": {},
+  "scripts": {
+    "dev": "vitest --ui",
+    "test": "vitest run"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@types/heap": "^0.2.31",
+    "dict": "^1.4.0",
+    "heap": "^0.2.7",
+    "heap-js": "^2.2.0"
+  }
 }

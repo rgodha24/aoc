@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { Grid } from "./grid";
 
 export const splitByLines = (input: string) => input.split("\n");
 
@@ -147,4 +148,170 @@ export const checkColumns = (input: unknown[]) => {
   return false;
 };
 
+export const getAdjacentIndices = (input: unknown[][], [x, y]: [number, number]) => {
+  const xlength = input[0].length;
+  const ylength = input.length;
+
+  const answer: [number, number][] = [];
+
+  if (x >= 1) {
+    answer.push([x - 1, y]);
+  }
+  if (y >= 1) {
+    answer.push([x, y - 1]);
+  }
+  if (x < xlength - 1) {
+    answer.push([x + 1, y]);
+  }
+  if (y < ylength - 1) {
+    answer.push([x, y + 1]);
+  }
+
+  return answer;
+};
+
+export const getAdjacentOrDiagonalIndices = (input: unknown[][], [x, y]: [number, number]) => {
+  const xlength = input[0].length;
+  const ylength = input.length;
+
+  const answer: [number, number][] = [];
+
+  if (x >= 1) {
+    answer.push([x - 1, y]);
+    if (y >= 1) {
+      answer.push([x - 1, y - 1]);
+    }
+    if (y < ylength - 1) {
+      answer.push([x - 1, y + 1]);
+    }
+  }
+  if (y >= 1) {
+    answer.push([x, y - 1]);
+  }
+  if (x < xlength - 1) {
+    answer.push([x + 1, y]);
+    if (y >= 1) {
+      answer.push([x + 1, y - 1]);
+    }
+    if (y < ylength - 1) {
+      answer.push([x + 1, y + 1]);
+    }
+  }
+  if (y < ylength - 1) {
+    answer.push([x, y + 1]);
+  }
+  return answer;
+};
+
+export const getDiagonalIndices = (input: unknown[][], [x, y]: [number, number]) => {
+  const xlength = input[0].length;
+  const ylength = input.length;
+
+  const answer: [number, number][] = [];
+
+  if (x >= 1) {
+    if (y >= 1) {
+      answer.push([x - 1, y - 1]);
+    }
+    if (y < ylength - 1) {
+      answer.push([x - 1, y + 1]);
+    }
+  }
+  if (x < xlength - 1) {
+    answer.push([x + 1, y]);
+    if (y >= 1) {
+      answer.push([x + 1, y - 1]);
+    }
+    if (y < ylength - 1) {
+      answer.push([x + 1, y + 1]);
+    }
+  }
+
+  return answer;
+};
+
+export const compare2Points = (a: [number, number], b: [number, number]) => {
+  return a[0] === b[0] && a[1] === b[1];
+};
+
+export const lowercaseCharToNum = (char: string) => {
+  if (char === "a") return 1;
+  if (char === "b") return 2;
+  if (char === "c") return 3;
+  if (char === "d") return 4;
+  if (char === "e") return 5;
+  if (char === "f") return 6;
+  if (char === "g") return 7;
+  if (char === "h") return 8;
+  if (char === "i") return 9;
+  if (char === "j") return 10;
+  if (char === "k") return 11;
+  if (char === "l") return 12;
+  if (char === "m") return 13;
+  if (char === "n") return 14;
+  if (char === "o") return 15;
+  if (char === "p") return 16;
+  if (char === "q") return 17;
+  if (char === "r") return 18;
+  if (char === "s") return 19;
+  if (char === "t") return 20;
+  if (char === "u") return 21;
+  if (char === "v") return 22;
+  if (char === "w") return 23;
+  if (char === "x") return 24;
+  if (char === "y") return 25;
+  if (char === "z") return 26;
+
+  throw new Error("Invalid character");
+};
+
+export const numToLowerCaseChar = (num: number) => {
+  if (num === 1) return "a";
+  if (num === 2) return "b";
+  if (num === 3) return "c";
+  if (num === 4) return "d";
+  if (num === 5) return "e";
+  if (num === 6) return "f";
+  if (num === 7) return "g";
+  if (num === 8) return "h";
+  if (num === 9) return "i";
+  if (num === 10) return "j";
+  if (num === 11) return "k";
+  if (num === 12) return "l";
+  if (num === 13) return "m";
+  if (num === 14) return "n";
+  if (num === 15) return "o";
+  if (num === 16) return "p";
+  if (num === 17) return "q";
+  if (num === 18) return "r";
+  if (num === 19) return "s";
+  if (num === 20) return "t";
+  if (num === 21) return "u";
+  if (num === 22) return "v";
+  if (num === 23) return "w";
+  if (num === 24) return "x";
+  if (num === 25) return "y";
+  if (num === 26) return "z";
+
+  throw new Error("Invalid number");
+}
+
+
+export const gridFind = <T>(grid: T[][], value: T) => {
+  for (let y = 0; y < grid.length; y++) {
+    for (let x = 0; x < grid[y].length; x++) {
+      if (grid[y][x] === value) {
+        return [x, y] as [number, number];
+      }
+    }
+  }
+
+  console.log(value, grid);
+
+  throw new Error("Value not found in gridFind func");
+};
+
 export type InferReturnType<T extends Function> = T extends (...args: any[]) => infer R ? R : never;
+
+export { z, Grid };
+export { a_star, cartesian_2d, str_irregular } from "./astar";

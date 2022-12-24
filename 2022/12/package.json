@@ -1,0 +1,25 @@
+{
+  "name": "aoc-2022-12",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "main": "index.ts",
+  "types": "index.ts",
+  "scripts": {
+    "dev": "vitest --ui",
+    "new": "cd ../.. && pnpm new",
+    "test": "vitest run",
+    "solve:1": "tsx ./solver/part1.ts",
+    "solve:2": "tsx ./solver/part2.ts",
+    "solve": "pnpm solve:1 && pnpm solve:2"
+  },
+  "devDependencies": {
+    "@vitest/ui": "latest",
+    "vite": "latest",
+    "vitest": "latest",
+    "@types/node": "^18.11.9",
+    "utils": "workspace:*",
+    "zod": "^3.19.1",
+    "tsx": "^3.12.1"
+  }
+}

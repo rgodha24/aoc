@@ -1,0 +1,1 @@
+stolen from stonecypher/astar-ts :)

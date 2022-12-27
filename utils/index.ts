@@ -294,8 +294,7 @@ export const numToLowerCaseChar = (num: number) => {
   if (num === 26) return "z";
 
   throw new Error("Invalid number");
-}
-
+};
 
 export const gridFind = <T>(grid: T[][], value: T) => {
   for (let y = 0; y < grid.length; y++) {
@@ -312,6 +311,8 @@ export const gridFind = <T>(grid: T[][], value: T) => {
 };
 
 export type InferReturnType<T extends Function> = T extends (...args: any[]) => infer R ? R : never;
+
+export const clone = <T>(input: T): T => JSON.parse(JSON.stringify(input)) as T;
 
 export { z, Grid };
 export { a_star, cartesian_2d, str_irregular } from "./astar";

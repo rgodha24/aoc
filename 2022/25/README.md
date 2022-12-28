@@ -1,1 +1,1 @@
-AOC year 2022 day 25
+# AOC year 2022 day 25

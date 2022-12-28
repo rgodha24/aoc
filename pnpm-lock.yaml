@@ -266,6 +266,42 @@ importers:
       vitest: 0.26.2_@vitest+ui@0.26.2
       zod: 3.20.2
 
+  2022/14:
+    specifiers:
+      '@types/node': ^18.11.9
+      '@vitest/ui': latest
+      tsx: ^3.12.1
+      utils: workspace:*
+      vite: latest
+      vitest: latest
+      zod: ^3.19.1
+    devDependencies:
+      '@types/node': 18.11.9
+      '@vitest/ui': 0.26.2
+      tsx: 3.12.1
+      utils: link:../../utils
+      vite: 4.0.3_@types+node@18.11.9
+      vitest: 0.26.2_@vitest+ui@0.26.2
+      zod: 3.20.2
+
+  2022/15:
+    specifiers:
+      '@types/node': ^18.11.9
+      '@vitest/ui': latest
+      tsx: ^3.12.1
+      utils: workspace:*
+      vite: latest
+      vitest: latest
+      zod: ^3.19.1
+    devDependencies:
+      '@types/node': 18.11.9
+      '@vitest/ui': 0.26.2
+      tsx: 3.12.1
+      utils: link:../../utils
+      vite: 4.0.3_@types+node@18.11.9
+      vitest: 0.26.2_@vitest+ui@0.26.2
+      zod: 3.20.2
+
   2022/2:
     specifiers:
       '@types/node': ^18.11.9
@@ -281,6 +317,24 @@ importers:
       vite: 4.0.3_@types+node@18.11.9
       vitest: 0.26.2_@vitest+ui@0.26.2
       zod: 3.19.1
+
+  2022/25:
+    specifiers:
+      '@types/node': ^18.11.9
+      '@vitest/ui': latest
+      tsx: ^3.12.1
+      utils: workspace:*
+      vite: latest
+      vitest: latest
+      zod: ^3.19.1
+    devDependencies:
+      '@types/node': 18.11.9
+      '@vitest/ui': 0.26.2
+      tsx: 3.12.1
+      utils: link:../../utils
+      vite: 4.0.3_@types+node@18.11.9
+      vitest: 0.26.2_@vitest+ui@0.26.2
+      zod: 3.20.2
 
   2022/3:
     specifiers:

@@ -1,1 +1,1 @@
-AOC year 2022 day 3
+# AOC year 2022 day 3

@@ -1,1 +1,1 @@
-AOC year 2022 day 12
+# AOC year 2022 day 12

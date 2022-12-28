@@ -1,1 +1,1 @@
-AOC year 2021 day 3
+# AOC year 2021 day 3

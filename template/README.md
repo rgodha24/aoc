@@ -1,1 +1,1 @@
-AOC year {{year}} day {{day}}
+# AOC year {{year}} day {{day}}

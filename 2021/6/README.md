@@ -1,1 +1,1 @@
-AOC year 2021 day 6
+# AOC year 2021 day 6

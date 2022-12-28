@@ -1,1 +1,1 @@
-AOC year 2021 day 1
+# AOC year 2021 day 1

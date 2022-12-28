@@ -39,6 +39,7 @@ export const numberToSNAFU = (number: number): SNAFU => {
       case 0:
         {
           addNextNumber = false;
+          snafu.push(0);
         }
         break;
       case 1: {
@@ -78,12 +79,9 @@ export const numberToSNAFU = (number: number): SNAFU => {
 
   let answer = snafu.reverse();
 
-  if (parseSnafu(answer) !== number) {
-    answer.push(0);
-  }
   if (parseSnafu(answer) !== number) throw new Error("number to snafu failed, do it manually ");
 
-  return answer;
+  return answer.slice(answer.findIndex((val) => val !== 0));
 };
 
 export const stringToSNAFU = (input: string): SNAFU => {

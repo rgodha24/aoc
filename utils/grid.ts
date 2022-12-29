@@ -34,7 +34,7 @@ export type PathfindArgs<T> = {
 export class Grid<T> {
   constructor(public grid: T[][]) {}
 
-  getIndex(coords: [number, number]) {
+  get(coords: [number, number]) {
     const [x = 0, y = 0] = coords;
     const answer = this.grid[y][x];
     return answer;
@@ -99,7 +99,7 @@ export class Grid<T> {
     const grid: Grid<string[]> = this.map((value, coords) => {
       return (getNeighbourFunction(coords, this.clone()).filter((x) => x !== undefined) ?? []).filter(
         (neighbourCoords) => {
-          const neighbourVal = (this.clone() || new Grid<T>([[]]))?.getIndex(neighbourCoords);
+          const neighbourVal = (this.clone() || new Grid<T>([[]]))?.get(neighbourCoords);
           const filtered = filterNeigbours({ coords, value, neighbourVal, neighbourCoords }, this);
 
           return filtered;

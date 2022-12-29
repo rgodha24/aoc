@@ -314,5 +314,55 @@ export type InferReturnType<T extends Function> = T extends (...args: any[]) => 
 
 export const clone = <T>(input: T): T => JSON.parse(JSON.stringify(input)) as T;
 
+export const smoothPath = (input: [number, number][]): [number, number][] => {
+  const answer: [number, number][] = [];
+
+  for (let i = 0; i < input.length; i++) {
+    const current = input[i]!;
+    const next = input[i + 1];
+
+    if (Array.isArray(next) && next.length === 2) {
+      answer.push(...pathBetween([current, next]).slice(0, -1));
+    } else {
+      answer.push(current);
+      break;
+    }
+  }
+
+  return answer;
+};
+
+export const pathBetween = (input: [[number, number], [number, number]]): [number, number][] => {
+  const answer: [number, number][] = [];
+
+  const [start, end] = input;
+
+  const [x1, y1] = start;
+  const [x2, y2] = end;
+
+  const xDiff = x2 - x1;
+  const yDiff = y2 - y1;
+
+  if (xDiff !== 0 && yDiff !== 0) throw new Error("invalid path between");
+
+  const xDiffAbs = Math.abs(xDiff);
+  const yDiffAbs = Math.abs(yDiff);
+
+  const xSign = xDiff / xDiffAbs;
+  const ySign = yDiff / yDiffAbs;
+
+  for (let i = 0; i < xDiffAbs; i++) {
+    answer.push([x1 + i * xSign, y1]);
+  }
+
+  for (let i = 0; i < yDiffAbs; i++) {
+    answer.push([x2, y1 + i * ySign]);
+  }
+
+  answer.push(end);
+
+  return answer;
+};
+
 export { z, Grid };
 export { a_star, cartesian_2d, str_irregular } from "./astar";

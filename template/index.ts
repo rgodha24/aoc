@@ -1,22 +1,22 @@
 import * as utils from "utils";
 import { z } from "zod";
 
-export const parseData = (input: string) => {
+export const parseData = (input: string, type: "example" | "real") => {
   return input;
 };
 
-export const part1postprocess = (input: utils.InferReturnType<typeof parseData>) => {
+export const part1postprocess = (input: ReturnType<typeof parseData>, type: "example" | "real") => {
   return input;
 };
 
-export function part1(input: utils.InferReturnType<typeof part1postprocess>) {
+export function part1(input: ReturnType<typeof part1postprocess>, type: "example" | "real") {
   return;
 }
 
-export const part2postprocess = (input: utils.InferReturnType<typeof parseData>) => {
+export const part2postprocess = (input: ReturnType<typeof parseData>, type: "example" | "real") => {
   return input;
 };
 
-export function part2(input: utils.InferReturnType<typeof part2postprocess>) {
+export function part2(input: ReturnType<typeof part2postprocess>, type: "example" | "real") {
   return;
 }

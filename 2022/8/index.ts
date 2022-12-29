@@ -1,5 +1,4 @@
 import * as utils from "utils";
-import { e } from "vitest/dist/index-81973d31.js";
 
 export function part1(input: string) {
   const { data, removed } = getData(input);
